@@ -218,6 +218,7 @@ section .row.keyword .keyword-list {
 }
 
 section h3 {
+    overflow: hidden;
     margin: 50px 0 10px;
     font-weight: 400;
 }
@@ -254,8 +255,98 @@ section .portfolio-list li .description p {
     font-size: 14px;
 }
 
+.end {
+    margin-top: 100px;
+    padding-top: 100px;
+    border-top: 2px solid #fff;
+    text-align: center;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        padding: 0 30px;
+    }
+
+    section .row .key {
+        width: 180px;
+    }
+
+    section .row .key h2 {
+        font-size: 28px;
+    }
+}
+
 @media screen and (max-width: 768px) {
+    body {
+        padding: 0 20px;
+    }
+
     .new-line-pc {
         display: inline;
+    }
+
+    header h1 {
+        padding: 20px 0;
+        font-size: 30px;
+    }
+
+    main nav ul li + li {
+        margin-left: 10px;
+    }
+
+    main nav ul li a {
+        font-size: 16px;
+    }
+
+    article .intro {
+        padding: 25px;
+    }
+
+    article .intro h2 {
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+
+    article .intro p {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    section {
+        margin-top: 50px;
+        padding: 0 10px;
+    }
+
+    section .row {
+        display: block;
+    }
+
+    section .row + .row {
+        margin-top: 50px;
+        padding-top: 50px;
+    }
+
+    section .row > * {
+        display: block;
+    }
+
+    section .row .key {
+        width:  auto;
+    }
+
+    section .row .key h2:after {
+        display: none;
+    }
+
+    section .row .value {
+        margin-top: 20px;
+        padding-top: 20px;
+        padding-left: 0;
+        border-top: 2px solid #fff;
+    }
+
+    section .portfolio-list li .thumb {
+        flex: 0 0 100px;
     }
 }
