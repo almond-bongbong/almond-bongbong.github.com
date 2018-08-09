@@ -87,6 +87,12 @@ a::selection {
     pointer-events: none;
 }
 
+.new-line-pc {
+    display: block;
+}
+
+/** style **/
+
 header {
     width: 1020px;
     max-width: 100%;
@@ -240,4 +246,16 @@ section .portfolio-list li .thumb .img {
 section .portfolio-list li .description {
     flex: 1 1 auto;
     padding-left: 30px;
+}
+
+section .portfolio-list li .description p {
+    margin-top: 5px;
+    color: #ccc;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    .new-line-pc {
+        display: inline;
+    }
 }
